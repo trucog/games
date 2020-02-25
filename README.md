@@ -3,9 +3,17 @@ Storing the details about the Games played by the participants and scores earned
 
 # Architecture
 
+
 ![](images/AWS%20Architecture.png)
 
-# DynamoDB
+
+The web application will consist of pages to add, delete and list user profile. Will use Angular to develop the web pages. Angular is a client-side technology thus we can host it on S3 buckets using static website hosting feature. Pages will be directly served to end user without any need of server-side processing.
+
+For storing the user information we will utilize AWS DynamoDB and the server side operations will be performed using AWS Lambda. API Gateway will be used to host of features including API designer, test creations, staging code etc.
+
+
+
+# About DynamoDB
 - DynamoDB is fast and flexible NoSQL database and it's for applications that need consistent single digit millisecond latency at any scale.And it's a fully managed database and it supports both document and key value data models.
 - It has a really flexible data model.So that means that you don't need to define your database schema upfront and it has really reliable performance as well.
 - And all of these attributes make it a really good fit for mobile gaming, ad-tech, IoT and many other applications.
@@ -27,6 +35,12 @@ DynamoDB- Primary Keys:
 - Allows you to store multiple items with the same partition keys.
 
 ## Steps to create a DynamoDB Table
+
+A database provides persistence mechanism for storing durable data. AWS comes with a bundle of options like AWS Relational Database Service (RDS), AWS DynamoDB, Amazon Redshift. Will use DynamoDB database.
+
+If you have already signed up for AWS account, look for DynamoDB option listed under Database section. If you are accessing DynamoDB service for the first time, you will be prompted with a welcome screen and an option to create a table. Click Create Table button and configure.
+
+
 ![](images/1%20Dynamo%20DB.png)
 ![](images/2%20Dynamo%20DB.png)
 ![](images/3%20Dynamo%20DB.png)
@@ -34,7 +48,7 @@ DynamoDB- Primary Keys:
 ![](images/5%20Dynamo%20DB.png)
 
 
-# AWS Lambda
+# About AWS Lambda
 1.	AWS Lambda service allows you to run code without provisioning or managing dedicated servers. 
 2.	In other words, Lambda will be called Serverless Computing.
 3.	The interesting feature about lambda is you only need to pay for the compute time you consume and no need to pay when your code is not running.
@@ -45,6 +59,10 @@ DynamoDB- Primary Keys:
 
 
 ## Steps to create AWS Lambda Functions
+
+Log in to the AWS console and locate Lambda from Compute section available under Services menu. If you are accessing Lambda Service for the first time, you will be presented with the Welcome screen. Click on Create Function button to proceed. You will be presented with options to choose from – Author From Scratch, Blueprints, and Serverless Application Repository. Make sure you have selected Author From Scratch. Configure the function using following settings.
+
+
 
 ![](images/1%20Lambda.png)
 ![](images/2%20Lambda.png)
@@ -67,6 +85,11 @@ DynamoDB- Primary Keys:
 - With Lambda, you can run code for virtually any type of application or backend service - all with zero administration. Just upload your code and Lambda takes care of everything required to run and scale your code with high availability. You can set up your code to automatically trigger from other AWS services or call it directly from any web or mobile app.    
 
 ## Steps to create API Gateways to access the resources
+
+Click Services menu in the top bar and locate API Gateway in Networking and Content Delivery. A Welcome screen will be displayed. Click on Get Started button and a pre-filled editor will be displayed. Since, we are going to create our own APIs, choose New API option. Enter following details in the form.
+Click Create API button. A new editor will be displayed to define resources and methods. The API Gateway follows REST conventions and hence objects to be managed are treated as Resources, while operations on these objects are exposed as HTTP methods.
+
+Click Actions button to pop menu items. Click on Create Resource menu item which will prompt for resource details. 
 
 ![](images/1%20API%20Gateway.png)
 ![](images/2%20API%20Gateway.png)
