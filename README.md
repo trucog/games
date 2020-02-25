@@ -65,9 +65,28 @@ DynamoDB- Primary Keys:
 - AWS Lambda lets you run code without provisioning or managing servers. You pay only for the compute time you consume.
 - With Lambda, you can run code for virtually any type of application or backend service - all with zero administration. Just upload your code and Lambda takes care of everything required to run and scale your code with high availability. You can set up your code to automatically trigger from other AWS services or call it directly from any web or mobile app.    
 
-
-
-
+![](images/1%20API%20Gateway.png)
+![](images/2%20API%20Gateway.png)
+![](images/3%20API%20Gateway.png)
+![](images/4%20API%20Gateway.png)
+![](images/5%20API%20Gateway.png)
+![](images/6%20API%20Gateway.png)
+![](images/7%20API%20Gateway.png)
+![](images/8%20API%20Gateway.png)
+![](images/9%20API%20Gateway.png)
+![](images/10%20API%20Gateway.png)
+![](images/11%20API%20Gateway.png)
+![](images/12%20API%20Gateway.png)
+![](images/13%20API%20Gateway.png)
+![](images/14%20API%20Gateway.png)
+![](images/15%20API%20Gateway.png)
+![](images/16%20API%20Gateway.png)
+![](images/17%20API%20Gateway.png)
+![](images/18%20API%20Gateway.png)
+![](images/19%20API%20Gateway.png)
+![](images/20%20API%20Gateway.png)
+![](images/21%20API%20Gateway.png)
+![](images/22%20API%20Gateway.png)
 
 
 
