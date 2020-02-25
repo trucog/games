@@ -44,6 +44,7 @@ DynamoDB- Primary Keys:
 7.	Lambda currently supports various languages such as java, python, node js, c, etc using which you can write your lambda function.
 
 
+## Steps to create AWS Lambda Functions
 
 ![](images/1%20Lambda.png)
 ![](images/2%20Lambda.png)
@@ -64,6 +65,8 @@ DynamoDB- Primary Keys:
 - Using API Gateway, you can create RESTful APIs and WebSocket APIs that enable real-time two-way communication applications. API Gateway supports containerized and serverless workloads, as well as web applications.      
 - AWS Lambda lets you run code without provisioning or managing servers. You pay only for the compute time you consume.
 - With Lambda, you can run code for virtually any type of application or backend service - all with zero administration. Just upload your code and Lambda takes care of everything required to run and scale your code with high availability. You can set up your code to automatically trigger from other AWS services or call it directly from any web or mobile app.    
+
+## Steps to create API Gateways to access the resources
 
 ![](images/1%20API%20Gateway.png)
 ![](images/2%20API%20Gateway.png)
@@ -119,7 +122,7 @@ Storage classes provided :
 - We can define life-cycle policies which can help in automation of data transfer, retention and deletion.
 - Amazon Athena can be used to "query" S3 data as per demand.
 
-
+##  Steps to upload data on S3
 
 # AWS CloudFront
 - Amazon CloudFront is a content delivery network (CDN) offered by AWS.
