@@ -3,7 +3,7 @@ Storing the details about the Games played by the participants and scores earned
 
 # Architecture
 
-![](images/AWS%20Architecture.PNG)
+![](images/AWS%20Architecture.png)
 
 # DynamoDB
 - DynamoDB is fast and flexible NoSQL database and it's for applications that need consistent single digit millisecond latency at any scale.And it's a fully managed database and it supports both document and key value data models.
