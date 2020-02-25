@@ -26,7 +26,7 @@ DynamoDB- Primary Keys:
 - All items with the same partition key are stored together, then sorted according to the sort key value.
 - Allows you to store multiple items with the same partition keys.
 
-
+## Steps to create a DynamoDB Table
 ![](images/1%20Dynamo%20DB.png)
 ![](images/2%20Dynamo%20DB.png)
 ![](images/3%20Dynamo%20DB.png)
