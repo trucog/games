@@ -5,6 +5,72 @@ Storing the details about the Games played by the participants and scores earned
 
 ![](images/AWS%20Architectture.PNG)
 
+# DynamoDB
+- DynamoDB is fast and flexible NoSQL database and it's for applications that need consistent single digit millisecond latency at any scale.And it's a fully managed database and it supports both document and key value data models.
+- It has a really flexible data model.So that means that you don't need to define your database schema upfront and it has really reliable performance as well.
+- And all of these attributes make it a really good fit for mobile gaming, ad-tech, IoT and many other applications.
+DynamoDB Tables:
+DynamoDB tables consist of 
+1. Item (Think of a row of data in a table).
+2. Attributes ((Think of a column of data in a table).
+3. Supports key-value and document data structures.
+4. Key= the name of the data.  Value= the data itself.
+5. Document can be written in JSON, HTML or XML.
+DynamoDB- Primary Keys:
+- DynamoDB stores and retrieve data based on Primary key
+- There are 2 types of Primary Key. Partition Key - Unique attribute
+- Value of the partition key is input to an internal hash function which determines the partition or physical location of which the data is stored.
+- If you are using the partition key as your Primary key, then no items have the same Partition key.
+- Composite Keys (Partition Key + Sort Key) in Combination.
+- 2 items may have same partition key but they must have a different sort key.
+- All items with the same partition key are stored together, then sorted according to the sort key value.
+- Allows you to store multiple items with the same partition keys.
+
+
+![](images/1%20Dynamo%20DB.png)
+![](images/2%20Dynamo%20DB.png)
+![](images/3%20Dynamo%20DB.png)
+![](images/4%20Dynamo%20DB.png)
+![](images/5%20Dynamo%20DB.png)
+
+
+# AWS Lambda
+1.	AWS Lambda service allows you to run code without provisioning or managing dedicated servers. 
+2.	In other words, Lambda will be called Serverless Computing.
+3.	The interesting feature about lambda is you only need to pay for the compute time you consume and no need to pay when your code is not running.
+4.	you can run code for virtually any type of application with zero administration with the help of AWS Lambda functions.
+5.	Just upload your code to Lambda and it will take care of everything required to run and scale your code with high availability
+6.	We can set triggering events for our lambda function when to run or when to get triggered.
+7.	Lambda currently supports various languages such as java, python, node js, c, etc using which you can write your lambda function.
+
+
+
+![](images/1%20Lambda.png)
+![](images/2%20Lambda.png)
+![](images/3%20Lambda.png)
+![](images/5.1%20Lambda.png)
+![](images/6%20Lambda.png)
+![](images/7%20Lambda.png)
+![](images/8.1%20Lambda.png)
+![](images/10%20Lambda.png)
+![](images/11.1%20Lambda.png)
+![](images/12%20Lambda.png)
+
+
+# API Gateway
+- Amazon API Gateway is a fully managed service that makes it easy for developers to create, publish, maintain, monitor, and secure APIs at any scale. 
+- APIs act as the front door for applications to access data, business logic, or functionality from your backend services. 
+- API Gateway handles all the tasks involved in accepting and processing up to hundreds of thousands of concurrent API calls, including traffic management, CORS support, authorization and access control, throttling, monitoring, and API version management. 
+- Using API Gateway, you can create RESTful APIs and WebSocket APIs that enable real-time two-way communication applications. API Gateway supports containerized and serverless workloads, as well as web applications.      
+- AWS Lambda lets you run code without provisioning or managing servers. You pay only for the compute time you consume.
+- With Lambda, you can run code for virtually any type of application or backend service - all with zero administration. Just upload your code and Lambda takes care of everything required to run and scale your code with high availability. You can set up your code to automatically trigger from other AWS services or call it directly from any web or mobile app.    
+
+
+
+
+
+
+
 # S3 
 - S3 stands for Simple Storage Service.
 - It provides object storage through a web service interface.
@@ -35,13 +101,6 @@ Storage classes provided :
 - Amazon Athena can be used to "query" S3 data as per demand.
 
 
-![](images/1%20Dynamo%20DB.png)
-![](images/2%20Dynamo%20DB.png)
-![](images/3%20Dynamo%20DB.png)
-![](images/4%20Dynamo%20DB.png)
-![](images/5%20Dynamo%20DB.png)
-
-
 
 # AWS CloudFront
 - Amazon CloudFront is a content delivery network (CDN) offered by AWS.
@@ -60,44 +119,3 @@ Storage classes provided :
 - Due to this the user can move front or back in the video, and the latency is very less i.e., the latency is based on the size of the file and the customer Internet bandwidth.
 - This service is beneficial for those developing a website that distributes a lot of content that needs to scale-up.
 -   It helps reduce costs and improve the performance of a website by providing high data transfer speeds, low latency
-
-# AWS Lambda
-1.	AWS Lambda service allows you to run code without provisioning or managing dedicated servers. 
-2.	In other words, Lambda will be called Serverless Computing.
-3.	The interesting feature about lambda is you only need to pay for the compute time you consume and no need to pay when your code is not running.
-4.	you can run code for virtually any type of application with zero administration with the help of AWS Lambda functions.
-5.	Just upload your code to Lambda and it will take care of everything required to run and scale your code with high availability
-6.	We can set triggering events for our lambda function when to run or when to get triggered.
-7.	Lambda currently supports various languages such as java, python, node js, c, etc using which you can write your lambda function.
-
-
-# API Gateway
-- Amazon API Gateway is a fully managed service that makes it easy for developers to create, publish, maintain, monitor, and secure APIs at any scale. 
-- APIs act as the front door for applications to access data, business logic, or functionality from your backend services. 
-- API Gateway handles all the tasks involved in accepting and processing up to hundreds of thousands of concurrent API calls, including traffic management, CORS support, authorization and access control, throttling, monitoring, and API version management. 
-- Using API Gateway, you can create RESTful APIs and WebSocket APIs that enable real-time two-way communication applications. API Gateway supports containerized and serverless workloads, as well as web applications.      
-- AWS Lambda lets you run code without provisioning or managing servers. You pay only for the compute time you consume.
-- With Lambda, you can run code for virtually any type of application or backend service - all with zero administration. Just upload your code and Lambda takes care of everything required to run and scale your code with high availability. You can set up your code to automatically trigger from other AWS services or call it directly from any web or mobile app.    
-
-
-# DynamoDB
-- DynamoDB is fast and flexible NoSQL database and it's for applications that need consistent single digit millisecond latency at any scale.And it's a fully managed database and it supports both document and key value data models.
-- It has a really flexible data model.So that means that you don't need to define your database schema upfront and it has really reliable performance as well.
-- And all of these attributes make it a really good fit for mobile gaming, ad-tech, IoT and many other applications.
-DynamoDB Tables:
-DynamoDB tables consist of 
-1. Item (Think of a row of data in a table).
-2. Attributes ((Think of a column of data in a table).
-3. Supports key-value and document data structures.
-4. Key= the name of the data.  Value= the data itself.
-5. Document can be written in JSON, HTML or XML.
-DynamoDB- Primary Keys:
-- DynamoDB stores and retrieve data based on Primary key
-- There are 2 types of Primary Key. Partition Key - Unique attribute
-- Value of the partition key is input to an internal hash function which determines the partition or physical location of which the data is stored.
-- If you are using the partition key as your Primary key, then no items have the same Partition key.
-- Composite Keys (Partition Key + Sort Key) in Combination.
-- 2 items may have same partition key but they must have a different sort key.
-- All items with the same partition key are stored together, then sorted according to the sort key value.
-- Allows you to store multiple items with the same partition keys.
-
