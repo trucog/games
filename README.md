@@ -124,6 +124,10 @@ Storage classes provided :
 
 ##  Steps to upload data on S3
 
+![](images/1%20S3.png)
+![](images/2%20S3.png)
+![](images/3%20S3.png)
+
 # AWS CloudFront
 - Amazon CloudFront is a content delivery network (CDN) offered by AWS.
 - CDN provide globally-distributed network of proxy servers which cache content, i.e., web videos or other bulky media, more locally to consumers, thus improving access speed for downloading the content.
