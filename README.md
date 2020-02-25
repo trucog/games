@@ -34,9 +34,12 @@ Storage classes provided :
 - We can define life-cycle policies which can help in automation of data transfer, retention and deletion.
 - Amazon Athena can be used to "query" S3 data as per demand.
 
-![](images/AWS%201 Dynamo DB.PNG)
-![](images/AWS%202 Dynamo DB.PNG)
-![](images/AWS%202 Dynamo DB.PNG)
+
+![](images/1%20Dynamo%20DB.png)
+![](images/2%20Dynamo%20DB.png)
+![](images/3%20Dynamo%20DB.png)
+![](images/4%20Dynamo%20DB.png)
+![](images/5%20Dynamo%20DB.png)
 
 
 
