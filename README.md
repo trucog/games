@@ -13,19 +13,19 @@ The web application will consist of pages to add, delete and list user profile. 
 For storing the user information we will utilize AWS DynamoDB and the server side operations will be performed using AWS Lambda. API Gateway will be used to host of features including API designer, test creations, staging code etc.
 
 
-## Technology Stack :
+## Technology Stack
 
-1. Angular : UI Development
-2. AWS Service development (AWS Console / Terrafoem)
-3. AWS Cloud :
-    - Storage : S3
-    - Database : DynamoDB
-    - Integration : API Gateway
-    - Metrics     : Cloud Watch
-    - Serverless(CRUD)  : Lambda
-    - Authentication    : IAM
+1.  Angular : UI Development
+2.  AWS Service development (AWS Console / Terrafoem)
+3.  AWS Cloud :
+     - Storage : S3
+     - Database : DynamoDB
+     - Integration : API Gateway
+     - Metrics     : Cloud Watch
+     - Serverless(CRUD)  : Lambda
+     - Authentication    : IAM
 
-4. CI/CD  : Go CD
+4.  CI/CD  : Go CD
 
 
 # About DynamoDB
