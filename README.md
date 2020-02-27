@@ -1,5 +1,6 @@
 # Games
-Storing the details about the Games played by the participants and scores earned.
+The application is a plaform for the Games lovers to play their favourite games. For each game , we have credit scores. As a guest player you can play few games for free.To get the score need to register. 
+
 
 # Architecture
 
