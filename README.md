@@ -16,7 +16,7 @@ For storing the user information we will utilize AWS DynamoDB and the server sid
 ## Technology Stack
 
 1.  Angular : UI Development
-2.  AWS Service development (AWS Console / Terrafoem)
+2.  AWS Service development (AWS Console / Terraform)
 3.  AWS Cloud :
      - Storage : S3
      - Database : DynamoDB
