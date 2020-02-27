@@ -4,7 +4,7 @@ Storing the details about the Games played by the participants and scores earned
 # Architecture
 
 
-![](images/AWS%20Architecture.png)
+![](images/AWS%20Architecture%20Diagram.PNG)
 
 
 The web application will consist of pages to add, delete and list user profile. Will use Angular to develop the web pages. Angular is a client-side technology thus we can host it on S3 buckets using static website hosting feature. Pages will be directly served to end user without any need of server-side processing.
