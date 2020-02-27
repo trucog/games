@@ -7,6 +7,6 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "b" {
-  bucket = "my-tf-test-bucketven1"
+  bucket = "my-tf-first-bucketven1"
 
 }
